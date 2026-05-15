@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="112" viewBox="0 0 360 112" role="img" aria-labelledby="title desc">
+  <title id="title">hirewithyzh</title>
+  <desc id="desc">Fallback hirewithyzh wordmark</desc>
+  <path d="M65 10 98 42 77 42 77 76 53 76 53 42 32 42Z" fill="#6B1320"/>
+  <path d="M77 76C77 91 66 101 51 101H28V80H49C53 80 56 77 56 73V42H77Z" fill="#1A1A1A"/>
+  <text x="118" y="54" fill="#1A1A1A" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="600" letter-spacing="-1.4">hirewithyzh</text>
+  <text x="120" y="82" fill="#6B6B6B" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2.2">HIRE WITH EASE</text>
+</svg>

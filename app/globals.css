@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-burgundy: #6b1320;
+  --color-burgundy-deep: #4a0d17;
+  --color-burgundy-soft: #f5e6e8;
+  --color-ink: #1a1a1a;
+  --color-graphite: #3d3d3d;
+  --color-slate: #6b6b6b;
+  --color-bone: #faf7f2;
+  --color-paper: #ffffff;
+  --color-hairline: #e6e1d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bone);
+  color: var(--color-ink);
+  font-family: var(--font-body), sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--color-burgundy);
+  color: var(--color-bone);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display), serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: clamp(2.75rem, 6vw, 5rem);
+    line-height: 1.05;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.15;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    font-family: var(--font-body), sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .body-lg {
+    color: var(--color-graphite);
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .body-copy {
+    color: var(--color-graphite);
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
