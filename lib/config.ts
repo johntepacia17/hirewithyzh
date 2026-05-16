@@ -71,7 +71,7 @@ export const siteConfig = {
   },
   about: {
     eyebrow: "- About hirewithyzh",
-    heading: "A hiring partner for teams that value quality and simplicity.",
+    heading: "We're a personal-brand hiring partner.",
     paragraphs: [
       "We help founders, operators, and growing teams hire dependable Filipino remote professionals - without the delays and guesswork of traditional agencies.",
       "Instead of sending a stack of resumes, we focus on understanding the role, filtering for fit, and presenting candidates who can contribute with confidence.",
@@ -115,7 +115,7 @@ export const siteConfig = {
     heading: "Services tailored to how you actually work.",
     lead:
       "Flexible support across key business functions - matched to how you actually work.",
-    closingLine: "Ready to hire the right talent - without the complexity?"
+    closingLine: "Ready to hire with more ease?"
   },
   services: [
     {
