@@ -152,7 +152,7 @@ export const siteConfig = {
     eyebrow: "- Founder-led",
     heading: "Built by someone who understands hiring firsthand",
     paragraphs: [
-      "HireWithYzh is led by Yzhiel Montero, with hands-on experience in sourcing, recruitment operations, and supporting global hiring teams.",
+      "HireWithYzh is built on hands-on experience in sourcing, recruitment operations, and supporting global hiring teams.",
       "The approach is simple: stay close to the process, focus on quality, and treat every hire as a long-term decision."
     ]
   },
