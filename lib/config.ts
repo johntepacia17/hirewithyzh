@@ -26,6 +26,7 @@ export type ProcessStep = {
 
 export const siteConfig = {
   name: "hirewithyzh",
+  url: "https://hirewithyzh.com",
   tagline: "Hire with Ease",
   subtagline: "Top Filipino Talent. Global Impact.",
   discoveryCallUrl: "https://forms.gle/PLACEHOLDER_DISCOVERY",

@@ -3,6 +3,7 @@ import { Fraunces, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { siteConfig } from "@/lib/config";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -26,20 +27,44 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hirewithyzh.com"),
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "hirewithyzh | Hire with Ease",
     template: "%s | hirewithyzh"
   },
   description:
     "A personal recruitment agency connecting companies with vetted Filipino remote talent.",
+  icons: {
+    icon: [
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml"
+      }
+    ],
+    shortcut: "/icon.svg"
+  },
   openGraph: {
     title: "hirewithyzh | Hire with Ease",
     description:
       "Top Filipino talent for global companies, delivered through a personal recruitment experience.",
-    url: "https://hirewithyzh.com",
+    url: siteConfig.url,
     siteName: "hirewithyzh",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "hirewithyzh | Hire with Ease"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "hirewithyzh | Hire with Ease",
+    description:
+      "Top Filipino talent for global companies, delivered through a personal recruitment experience.",
+    images: ["/opengraph-image"]
   }
 };
 
