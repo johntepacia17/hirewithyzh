@@ -20,6 +20,7 @@ export function Services() {
         >
           <p className="eyebrow text-burgundy">{servicesSection.eyebrow}</p>
           <h2 className="mt-6">{servicesSection.heading}</h2>
+          <p className="body-lg mt-6">{servicesSection.lead}</p>
         </motion.div>
 
         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

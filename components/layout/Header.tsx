@@ -31,11 +31,11 @@ export function Header() {
         hasScrolled ? "shadow-hairline" : ""
       }`}
     >
-      <Container className="flex min-h-20 items-center justify-between gap-6">
+      <Container className="flex min-h-20 items-center justify-between gap-6 md:min-h-24">
         <Link aria-label="hirewithyzh home" className="shrink-0" href="/">
           <Image
             alt="hirewithyzh"
-            className="h-10 w-auto"
+            className="h-12 w-auto md:h-14"
             height={112}
             priority
             src="/logo.svg"

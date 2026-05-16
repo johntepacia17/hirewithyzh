@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "motion/react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { siteConfig } from "@/lib/config";
@@ -15,26 +12,8 @@ export function Banner() {
           <div className="lg:col-span-7">
             <p className="eyebrow text-burgundy">{hero.eyebrow}</p>
             <h1 className="mt-8 max-w-4xl">
-              {hero.headlineWords.map((word, index) => (
-                <motion.span
-                  animate={{ opacity: 1, y: 0 }}
-                  className="mr-[0.22em] inline-block"
-                  initial={{ opacity: 0, y: 8 }}
-                  key={word}
-                  transition={{ delay: index * 0.04, duration: 0.5, ease: "easeOut" }}
-                >
-                  {word}
-                </motion.span>
-              ))}
-              <motion.em
-                animate={{ opacity: 1, y: 0 }}
-                className="inline-block text-burgundy"
-                initial={{ opacity: 0, y: 8 }}
-                transition={{ delay: hero.headlineWords.length * 0.04, duration: 0.5, ease: "easeOut" }}
-              >
-                {hero.emphasis}
-              </motion.em>
-              .
+              {hero.headlinePrefix}{" "}
+              <em className="text-burgundy">{hero.emphasis}</em>.
             </h1>
             <p className="body-lg mt-8 max-w-2xl">{hero.lead}</p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -47,26 +26,21 @@ export function Banner() {
             </div>
           </div>
 
-          <motion.aside
-            animate={{ opacity: 1, y: 0 }}
-            className="border-l border-hairline pl-8 lg:col-span-5 lg:col-start-8"
-            initial={{ opacity: 0, y: 24 }}
-            transition={{ delay: 0.25, duration: 0.6, ease: "easeOut" }}
-          >
+          <aside className="border-l border-hairline pl-8 lg:col-span-5 lg:col-start-8">
             <div className="divide-y divide-hairline">
-              {hero.stats.map((stat) => (
-                <div className="py-6 first:pt-0" key={stat.label}>
-                  <p className="font-display text-5xl font-medium leading-none tracking-[-0.04em] text-ink md:text-6xl">
-                    {stat.value}
+              {hero.trustPoints.map((point) => (
+                <div className="py-7 first:pt-0" key={point.title}>
+                  <p className="font-display text-3xl font-medium leading-tight text-ink">
+                    {point.title}
                   </p>
-                  <p className="eyebrow mt-3 text-slate">{stat.label}</p>
+                  <p className="body-copy mt-3">{point.description}</p>
                 </div>
               ))}
             </div>
             <blockquote className="mt-10 max-w-md font-display text-2xl italic leading-snug text-graphite">
-              “{hero.quote}”
+              &ldquo;{hero.quote}&rdquo;
             </blockquote>
-          </motion.aside>
+          </aside>
         </div>
       </Container>
     </section>
